@@ -1,11 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroImg from '../assets/surf.jpg'
+import heroImg2 from '../assets/bike.jpg'
 
 const Hero = () => {
-  return <h4>hero</h4>
+  return <Wrapper className='section-center'>
+    <article className='content'>
+      <h1>make your home<br />
+        <i>your</i> home</h1>
+      <Link to='/products' className='btn hero-btn'>
+        Shop
+      </Link>
+    </article>
+    <article className='img-container'>
+      <img src={heroImg} alt="men surfing" className="main-img" />
+      {/* <img src={heroImg2} alt="woman biking" className="main-img" /> */}
+
+    </article>
+
+  </Wrapper>
 }
 
 const Wrapper = styled.section`
@@ -43,7 +57,7 @@ const Wrapper = styled.section`
     }
     .main-img {
       width: 100%;
-      height: 550px;
+      height: 400px;
       position: relative;
       border-radius: var(--radius);
       display: block;

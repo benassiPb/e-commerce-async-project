@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/default.svg'
 import { Link } from 'react-router-dom'
 import { useProductsContext } from '../context/products_context'
 import { FaTimes } from 'react-icons/fa'
@@ -23,10 +23,11 @@ const Sidebar = () => {
         {links.map(
           ({ id, text, url }) => {
             return (
-            <li key={id}>
-              <Link to={url} onClick={closeSidebar}>{text}</Link>
-            </li>
-         ) })}
+              <li key={id}>
+                <Link to={url} onClick={closeSidebar}>{text}</Link>
+              </li>
+            )
+          })}
         <li>
           <Link to='/checkout' onClick={closeSidebar}>checkout</Link>
         </li>
@@ -48,18 +49,18 @@ const SidebarContainer = styled.div`
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    color: darkblue;
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
+    color: darkblue;
     margin-top: 0.2rem;
   }
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: lightblue;
   }
   .logo {
     justify-self: center;
-    height: 45px;
+    height: 130px;
   }
   .links {
     margin-bottom: 2rem;

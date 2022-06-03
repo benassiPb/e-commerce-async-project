@@ -1,5 +1,5 @@
 import React from 'react'
-import { GiCompass, GiDiamondHard, GiStabbedNote } from 'react-icons/gi'
+import { GiCompass, GiHangingSpider, GiLotus } from 'react-icons/gi'
 export const links = [
   {
     id: 1,
@@ -22,23 +22,23 @@ export const services = [
   {
     id: 1,
     icon: <GiCompass />,
-    title: 'mission',
+    title: 'purpose',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     id: 2,
-    icon: <GiDiamondHard />,
+    icon: <GiLotus />,
     title: 'vision',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     id: 3,
-    icon: <GiStabbedNote />,
-    title: 'history',
+    icon: <GiHangingSpider />,
+    title: 'origin story',
     text:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ea. Perferendis corrupti reiciendis nesciunt rerum velit autem unde numquam nisi',
+      'Lorem ipsum, dolor sit amet consectetur.',
   },
 ]
 
