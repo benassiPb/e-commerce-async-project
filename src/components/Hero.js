@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroImg from '../assets/surf.jpg'
-import heroImg2 from '../assets/bike.jpg'
+import heroImg from '../assets/bluecouch.jpg'
 
 const Hero = () => {
   return <Wrapper className='section-center'>
@@ -14,7 +13,7 @@ const Hero = () => {
       </Link>
     </article>
     <article className='img-container'>
-      <img src={heroImg} alt="men surfing" className="main-img" />
+      <img src={heroImg} alt="blue couch" className="main-img" />
       {/* <img src={heroImg2} alt="woman biking" className="main-img" /> */}
 
     </article>
