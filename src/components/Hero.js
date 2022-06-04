@@ -4,21 +4,18 @@ import { Link } from 'react-router-dom'
 import heroImg from '../assets/bluecouch.jpg'
 
 const Hero = () => {
-  return <Wrapper className='section-center'>
+  return (<Wrapper className='section-center'>
     <article className='content'>
       <h1>make your home<br />
-        <i>your</i> home</h1>
+        <i>your home</i> </h1>
       <Link to='/products' className='btn hero-btn'>
         Shop
       </Link>
     </article>
     <article className='img-container'>
       <img src={heroImg} alt="blue couch" className="main-img" />
-      {/* <img src={heroImg2} alt="woman biking" className="main-img" /> */}
-
     </article>
-
-  </Wrapper>
+  </Wrapper>)
 }
 
 const Wrapper = styled.section`
